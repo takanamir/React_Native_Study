@@ -5,7 +5,8 @@ import dummyArticles from '../dummies/articles';
 import Constants from 'expo-constants';
 import axios from 'axios';
 
-const URL = `http://newsapi.org/v2/everything?q=bitcoin&from=2020-07-20&sortBy=publishedAt&apiKey=${Constants.manifest.extra.newsApiKey}`;
+const URL = `http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${Constants.manifest.extra.newsApiKey}`;
+// const URL = "https://asia-northeast1-news-app-udemy.cloudfunctions.net/dummy_news";
 
 const styles = StyleSheet.create({
   container: {
