@@ -34,7 +34,7 @@ export default HomeScreen = ({navigation}) => {
     <SafeAreaView style={styles.container}>
       <FlatList
         data={articles}
-        renderItem={({ item }) => (
+        renderItem={({item}) => (
           <ListItem
             imageUrl={item.urlToImage}
             title={item.title}
